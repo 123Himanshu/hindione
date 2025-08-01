@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Banner Image -->
+    <div class="text-center pt-20 mb-0">
+        <img src="assets/lamb.png" alt="प्रभु का मेमना - जो जगत का पाप उठा ले जाता है! - यूहन्ना 1:29" class="max-w-4xl mx-auto w-full">
+    </div>
+    <title>सुसमाचार हमें बचाता है - दुनिया भर में आशा फैलाना</title>
+    <meta name="description" content="प्रचारक जोन्स प्योर गोल्ड गॉस्पल सिंगर्स के माध्यम से यीशु मसीह के सुसमाचार के साथ दुनिया भर के लोगों तक पहुंच रहे हैं। आज हमारी सेवकाई का समर्थन करें।">
+    <meta name="keywords" content="evangelio, jesus, ministerio, donación, cristiano, fe, salvación">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+</head>
+<body class="font-inter bg-gradient-to-br from-slate-50 to-blue-50 border-4 border-red-600">
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="fixed inset-0 bg-white/80 backdrop-blur-sm flex items-center justify-center z-[9999] hidden opacity-0 transition-opacity duration-300">
+        <div class="loader ease-linear rounded-full border-4 border-t-4 border-gray-200 h-12 w-12"></div>
+    </div>
+
+    <!-- Header -->
+    <header id="header" class="fixed top-0 w-full z-50 transition-all duration-300 bg-gray-200/90 backdrop-blur-lg border-b border-white/20 shadow-md animate-fadeIn">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex h-16 items-center justify-between">
+                <!-- Left Logo Section -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <div class="logo-container">
+                        <img src="assets/logo.jpg" alt="Logo" class="w-12 h-12 object-contain" />
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="flex items-center space-x-4 md:space-x-8">
+                    <a href="index.html" class="nav-link text-gray-600 hover:text-red text-sm md:text-base lg:text-xl font-medium transition-colors">होम</a>
+                    <a href="donate.html" class="nav-link text-gray-600 hover:text-red text-sm md:text-base lg:text-xl font-medium transition-colors">दान करें</a>
+                    <a href="about.html" class="nav-link text-gray-600 hover:text-red text-sm md:text-base lg:text-xl font-medium transition-colors">हमारे बारे में</a>
+                    <a href="#contact" class="nav-link text-gray-600 hover:text-red text-sm md:text-base lg:text-xl font-medium transition-colors">संपर्क करें</a>
+                </nav>
+
+                <!-- Right Logo Section -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <div class="logo-container">
+                        <img src="assets/logo.jpg" alt="Logo" class="w-12 h-12 object-contain" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-20 py-16 flex items-center justify-center relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0">
+            <div class="absolute top-20 left-20 w-32 h-32 bg-gray-100 rounded-full"></div>
+            <div class="absolute bottom-20 right-20 w-40 h-40 bg-gray-200 rounded-full"></div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gray-50 rounded-full"></div>
+        </div>
+
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-6xl mx-auto">
+                
+                <!-- Main Title -->
+                <div class="mb-8">
+                    <h1 class="text-4xl md:text-7xl lg:text-8xl font-bold text-gray-900 mb-4 leading-tight font-playfair">
+                        <span>सुसमाचार</span> <span class="text-red-600">हमें बचाता है</span>
+                    </h1>
+                    <h3 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-700 mb-8 font-playfair">यीशु बचाता है</h3>
+
+                    <!-- Elegant Divider -->
+                    <div class="flex items-center justify-center space-x-6 mb-12">
+                        <div class="w-24 h-0.5 bg-gray-400"></div>
+                        <div class="w-3 h-3 bg-red-600 rounded-full"></div>
+                        <div class="w-24 h-0.5 bg-gray-400"></div>
+                    </div>
+                </div>
+
+                <!-- Description -->
+                <div class="max-w-6xl mx-auto mb-12">
+                    <div class="glass-card p-6 rounded-3xl mb-8">
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 font-playfair text-center">हमारा मिशन</h2>
+                        <div class="w-32 h-1 bg-gradient-to-r from-red-500 to-red-700 mx-auto rounded-full mb-8"></div>
+                        <p class="text-base md:text-lg text-gray-800 leading-relaxed mb-4">
+                            सुसमाचार प्रचारिका (Evangelist) जोन्स, शुद्ध स्वर्ण सुसमाचार गायन मंडली (Pure Gold Gospel Singers) के माध्यम से, प्रेरणादायक बोली गई वाणी (Spoken Word) रिकॉर्डिंग्स के द्वारा सुसमाचार की परिवर्तनकारी शक्ति को साझा कर रही हैं। वे अंग्रेज़ी भाषा में कथा प्रस्तुत कर रही हैं, सिस्टर सोल पेरेरा स्पेनिश में, सुसमाचार प्रचारिका जेनेट ओलातैन योरूबा में, सेविका सुसन कॉलिन्स इग्बो में, सेवक आइज़ैक सैमसन हौसा में, और सिस्टर आस्था जोशी हिंदी में कथा सुना रही हैं।
+                        </p>
+                        <p class="text-base md:text-lg text-gray-800 leading-relaxed mb-4">
+                            हमारा संदेश अंतरराष्ट्रीय श्रोताओं तक जैंगो डॉट कॉम (Jango.com) के माध्यम से रेडियो प्रसारण मंच (Radio Airplay Platform) द्वारा पहुँचा रहा है, जहाँ यह संदेश सामान्य संगीत स्ट्रीमिंग के साथ रणनीतिक रूप से प्रस्तुत किया जाता है। इस अवधारणा की शुरुआत वर्ष 2016 में हुई थी, लेकिन हमारी सेवकाई ने वर्ष 2024 तक दान के लिए कोई अनुरोध नहीं किया था।
+                        </p>
+                        <p class="text-base md:text-lg text-gray-800 leading-relaxed mb-4">
+                            आपके द्वारा दिया गया प्रत्येक प्रेम का बीज (दान) सीधे हमारे रेडियो प्रसारण समय (एयरटाइम) की लागत को पूरा करता है, जिससे हम ईश्वर का संदेश पूरी दुनिया में लगातार प्रसारित कर सकें।
+                        </p>
+                        <p class="text-base md:text-lg text-gray-800 leading-relaxed mb-4 italic font-medium">
+                            नीतिवचन 11:30 में लिखा है:<br>
+                            "धर्मी का फल जीवन का वृक्ष होता है, और बुद्धिमान प्राणों का उद्धार करता है।"
+                        </p>
+                        <p class="text-base md:text-lg text-gray-800 leading-relaxed mb-4">
+                            जब आप इस सेवकाई में आर्थिक सहयोग करते हैं, तो आप हमारे मिशन का एक अभिन्न अंग बन जाते हैं—जो दुनियाभर के श्रोताओं को आशा, विश्वास और उद्धार का संदेश पहुँचाता है। यह बोली गई वाणी सभी संगीत शैलियों के बीच में बजाई जा रही है, जो लोगों को यह सिखा रही है कि हमें क्यों उद्धार पाना चाहिए और कैसे उद्धार प्राप्त किया जा सकता है।
+                        </p>
+                        <p class="text-base md:text-lg text-gray-800 leading-relaxed mb-4">
+                            आइए, हम एक साथ मिलकर यह सुनिश्चित करें कि ईश्वर का संदेश लोगों के दिलों को छूता रहे और उनके जीवन को रूपांतरित करता रहे।
+                        </p>
+                        <p class="text-base md:text-lg text-gray-800 leading-relaxed">
+                            हमारी सेवकाई आपसे करबद्ध निवेदन करती है कि कृपया हमारे रेडियो प्रसारण व्यय में सहयोग हेतु अपना आर्थिक योगदान दें।
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                        <div class="feature-card glass-card p-6 rounded-2xl text-center transition-transform duration-300">
+                            <div class="w-16 h-16 bg-gradient-to-br from-red-500 to-red-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.348 14.651a3.75 3.75 0 010-5.303m5.304 0a3.75 3.75 0 010 5.303m-7.425 2.122a6.75 6.75 0 010-9.546m9.546 0a6.75 6.75 0 010 9.546M5.106 18.894c3.808-3.808 9.98-3.808 13.788 0"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3">रेडियो एयरप्ले</h3>
+                            <p class="text-gray-600">रेडियो एयरप्ले चार्ट पर संदेश फैलाने के लिए विभिन्न शुल्क सूचीबद्ध हैं।</p>
+                        </div>
+
+                        <div class="feature-card glass-card p-6 rounded-2xl text-center scale-105 group hover:scale-110 transition-transform duration-300 relative overflow-hidden bg-gradient-to-br from-amber-50 to-amber-100 border-4 border-amber-500">
+                            
+                            <div class="relative z-10">
+                                <div class="w-16 h-16 bg-gradient-to-br from-amber-500 to-amber-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-semibold text-gray-900 mb-3">आपका दान</h3>
+                                <p class="text-amber-700 font-semibold text-lg mb-6">क्या आप लागत में मदद के लिए $12 या अधिक दान करेंगे?</p>
+                                <a href="donate.html" class="inline-flex items-center px-6 py-2 rounded-full text-lg font-semibold text-white bg-gradient-to-r from-amber-500 to-amber-700 hover:from-amber-600 hover:to-amber-800 transition-all duration-300 shadow-md hover:shadow-lg group">
+                                    <span>अभी दान करें</span>
+                                    <svg class="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="feature-card glass-card p-6 rounded-2xl text-center transition-transform duration-300">
+                            <div class="w-16 h-16 bg-gradient-to-br from-sky-500 to-sky-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3">सुनें</h3>
+                            <p class="text-gray-600">यह सुनने के लिए प्ले बटन पर क्लिक करें कि आप हमें क्या करने में मदद कर रहे हैं।</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Donation Chart -->
+                <div class="max-w-6xl mx-auto glass-card rounded-3xl p-6 md:p-10 mb-8">
+                    <div class="text-center mb-8">
+                        <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-playfair">रेडियो एयरप्ले तालिका</h3>
+                        <div class="w-32 h-1 bg-gradient-to-r from-red-400 to-red-600 mx-auto rounded-full mb-4"></div>
+                        <p class="text-lg text-gray-600">सुसमाचार के प्रसार हेतु अपना समर्थन स्तर चुनें</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="pricing-card bg-white border border-red-500 p-8 rounded-2xl text-gray-900 text-center group hover:scale-105 transition-transform duration-300 shadow-xl">
+                            <div class="w-16 h-16 bg-gradient-to-br from-red-500 to-red-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8" fill="white" viewBox="0 0 24 24">
+                                    <path d="M9 3v12.26A3.99 3.99 0 0 0 8 15a4 4 0 1 0 4 4V8h6V3H9z"/>
+                                </svg>
+                            </div>
+                            <div class="text-xl font-bold mb-2">परिचय</div>
+                            <div class="text-2xl font-bold mb-2">$12</div>
+                            <div class="text-sm opacity-75 mt-2">प्रारंभिक समर्थन</div>
+                        </div>
+
+                        <div class="pricing-card bg-white border border-amber-500 p-8 rounded-2xl text-gray-900 text-center group hover:scale-105 transition-transform duration-300 shadow-xl">
+                            <div class="w-16 h-16 bg-gradient-to-br from-amber-500 to-amber-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9v-8h2v8zm4 0h-2v-8h2v8z"/></svg>
+                            </div>
+                            <div class="text-xl font-bold mb-2">गोल्ड</div>
+                            <div class="text-2xl font-bold mb-2">$33</div>
+                            <div class="text-sm opacity-75 mt-2">विस्तारित प्रभाव</div>
+                        </div>
+
+                        <div class="pricing-card bg-white border border-gray-500 p-8 rounded-2xl text-gray-900 text-center group hover:scale-105 transition-transform duration-300 shadow-xl">
+                            <div class="w-16 h-16 bg-gradient-to-br from-gray-500 to-gray-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M20 9.34l-5.46-1.57-2.61-4.9c-.3-.5-1.1-.5-1.4 0L9.46 7.77 4 9.34c-.8.2-1.12 1.1-.5 1.7l3.96 3.86-.94 5.4c-.14.8.7 1.4 1.3 1L12 18l4.88 2.56c.6.3 1.4-.3 1.3-1l-.94-5.4 3.96-3.86c.62-.6.3-1.5-.5-1.7z"/></svg>
+                            </div>
+                            <div class="text-xl font-bold mb-2">प्लैटिनम</div>
+                            <div class="text-2xl font-bold mb-2">$100</div>
+                            <div class="text-sm opacity-75 mt-2">बड़ी आशीष</div>
+                        </div>
+
+                        <div class="pricing-card bg-white border border-sky-500 p-8 rounded-2xl text-gray-900 text-center group hover:scale-105 transition-transform duration-300 shadow-xl">
+                            <div class="w-16 h-16 bg-gradient-to-br from-sky-500 to-sky-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+                            </div>
+                            <div class="text-xl font-bold mb-2">मल्टी-प्लैटिनम</div>
+                            <div class="text-2xl font-bold mb-2">$250</div>
+                            <div class="text-sm opacity-75 mt-2">सर्वोच्च समर्थन</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Airplay Chart Image -->
+                    <div class="mt-12">
+                        <img src="assets/airplay.png" alt="रेडियो एयरप्ले की विस्तृत तालिका" class="max-w-full mx-auto rounded-lg shadow-xl"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audio Section -->
+    <section id="audio" class="py-16 bg-gradient-to-br from-gray-100 to-gray-200 relative overflow-hidden">
+        <!-- Animated Background Elements -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div class="absolute top-0 left-0 w-96 h-96 bg-red-200/20 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
+            <div class="absolute top-0 right-0 w-96 h-96 bg-sky-200/20 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+            <div class="absolute -bottom-8 left-20 w-96 h-96 bg-amber-200/20 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
+        </div>
+
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-5xl mx-auto">
+                <!-- Section Header -->
+                <div class="mb-12">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 font-playfair">
+                        <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-red-800">सुसमाचार सुनें</span>
+                    </h2>
+                    <div class="w-32 h-1 bg-gradient-to-r from-red-600 to-red-800 mx-auto rounded-full"></div>
+                </div>
+
+                <!-- New Audio Player Design -->
+                <div class="glass-card rounded-2xl p-8">
+                    <div class="flex flex-col lg:flex-row items-center gap-2">
+                        <!-- Album Art -->
+                        <div class="relative w-64 h-64 flex-shrink-0 group">
+                            <div class="absolute inset-0 bg-gradient-to-br from-red-500/10 to-sky-500/10 rounded-2xl blur-xl opacity-50"></div>
+                            <img src="assets/hindiSite.png" alt="The Gospel Album Cover" class="relative w-full h-full object-cover rounded-2xl shadow-lg"/>
+
+                            <!-- Audio Waves Visualizer Overlay on Image -->
+                            <div id="audioWaves" class="absolute inset-x-0 bottom-4 flex justify-center items-end space-x-1 h-12">
+                                <div class="audio-wave bg-red-600"></div>
+                                <div class="audio-wave bg-red-600"></div>
+                                <div class="audio-wave bg-red-600"></div>
+                                <div class="audio-wave bg-red-600"></div>
+                                <div class="audio-wave bg-red-600"></div>
+                                <div class="audio-wave bg-red-600"></div>
+                                <div class="audio-wave bg-red-600"></div>
+                                <div class="audio-wave bg-red-600"></div>
+                                <div class="audio-wave bg-red-600"></div>
+                                <div class="audio-wave bg-red-600"></div>
+                            </div>
+                        </div>
+
+                        <!-- Track Info and Controls -->
+                        <div class="flex-1 text-center space-y-6">
+                            <div>
+                                <h3 class="text-3xl font-bold text-gray-900 mb-2 font-playfair">"सुसमाचार"</h3>
+                                <p class="text-lg text-gray-600 mb-3">आस्था जोशी</p>
+                                <div class="flex items-center justify-center space-x-3">
+                                  
+                                    
+                                </div>
+                            </div>
+
+                            <!-- Audio Element -->
+                            <audio id="audioPlayer" preload="metadata" class="hidden" role="audio">
+                                <source src="assets/Aastha.mp3" type="audio/mpeg">
+                               
+                                आपका ब्राउज़र ऑडियो तत्व का समर्थन नहीं करता है।
+                            </audio>
+
+                            <!-- Play Button (Middle) -->
+                            <div class="flex justify-center">
+                                <button id="playButton" class="group relative">
+                                    <!-- Outer Ring -->
+                                    <div class="absolute inset-0 bg-gradient-to-r from-red-600 to-red-800 rounded-full blur-md opacity-50 group-hover:opacity-75 transition-opacity"></div>
+                                    
+                                    <!-- Button Container -->
+                                    <div class="relative w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-lg transform group-hover:scale-105 transition-transform duration-300">
+                                        <!-- Inner Circle -->
+                                        <div class="absolute inset-2 bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
+                                        
+                                        <!-- Play/Pause Icons -->
+                                        <svg id="playIcon" class="w-8 h-8 text-white relative z-10" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z"/>
+                                        </svg>
+                                        <svg id="pauseIcon" class="w-8 h-8 text-white relative z-10 hidden" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                                        </svg>
+                                    </div>
+                                </button>
+                            </div>
+
+                            <!-- Progress Bar -->
+                            <div class="space-y-3">
+                                <div class="flex justify-between text-sm text-gray-600 font-medium">
+                                    <span id="currentTime" class="font-mono">0:00</span>
+                                    <span id="duration" class="font-mono">0:00</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2 overflow-hidden">
+                                    <div id="progressBar" class="bg-gradient-to-r from-red-600 to-red-800 h-2 rounded-full transition-all duration-300 relative">
+                                        <div class="absolute inset-0 bg-white/20 animate-pulse"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="flex flex-col md:flex-row justify-center items-stretch gap-8 mt-12">
+            <!-- Gospel Shop Card -->
+    <div class="glass-card rounded-3xl p-6 flex flex-col items-center justify-between text-center max-w-md w-full animate-fadeInUp shadow-xl transition-all duration-300 hover:scale-[1.03] backdrop-blur-lg bg-white/30 border-2 border-red-600 flex-1 h-[250px]">
+      <h3 class="text-lg font-bold text-black mb-3 font-playfair">सुसमाचार की ध्वनि से अपनी आत्मा को ऊँचा उठाएं 🎵</h3>
+      <p class="text-sm text-black mb-4">आत्मा को प्रोत्साहित करने वाले और प्रेरणादायक गॉस्पेल कंटेंट सुनने के लिए।</p>
+      <a href="https://justwanttoencourageyou.org/" target="_blank" rel="noopener noreferrer" class="mt-auto inline-flex items-center px-6 py-2 rounded-full text-sm font-semibold text-white bg-red-600 hover:bg-red-700 transition-all duration-300 shadow-md hover:shadow-lg group">
+        <span>गॉस्पेल स्टोर पर जाएँ</span>
+        <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Right Div: Listen on Jango -->
+    <div class="glass-card rounded-3xl p-6 flex flex-col items-center justify-between text-center max-w-md w-full animate-fadeInUp animation-delay-300 shadow-xl transition-all duration-300 hover:scale-[1.03] backdrop-blur-lg bg-white/30 border-2 border-red-600 flex-1 h-[250px]">
+      <h3 class="text-lg font-bold text-black mb-3 font-playfair">Jango Play पर सुनें</h3>
+      <p class="text-sm text-black mb-4">पूरा चयन सुनने के लिए Jango.com पर जाएं।</p>
+      <a href="https://www.jango.com/music/Pure+Gold+Gospel+Singers" target="_blank" rel="noopener noreferrer" class="mt-auto inline-flex items-center px-6 py-2 rounded-full text-sm font-semibold text-white bg-red-600 hover:bg-red-700 transition-all duration-300 shadow-md hover:shadow-lg group">
+        <span>Jango.com पर जाएं</span>
+        <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 003-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Left Div: Playing Gospel Music & Amazon Download -->
+    <div class="glass-card rounded-3xl p-6 flex flex-col items-center justify-between text-center max-w-md w-full animate-fadeInUp animation-delay-600 shadow-xl transition-all duration-300 hover:scale-[1.03] backdrop-blur-lg bg-white/30 border-2 border-red-600 flex-1 h-[250px]">
+      <h3 class="text-lg font-bold text-black mb-3 font-playfair">यह सुसमाचार संदेश बज रहा है</h3>
+      <p class="text-sm text-black mb-4">आपका दान रेडियो पर सुसमाचार को फैलाता है।</p>
+      <a href="#" class="mt-auto inline-flex items-center px-6 py-2 rounded-full text-sm font-semibold text-white bg-red-600 hover:bg-red-700 transition-all duration-300 shadow-md hover:shadow-lg group">
+        <span>जल्द आ रहा है</span>
+        <svg class="w-5 h-5 ml-3 transform group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+        </svg>
+      </a>
+    </div>
+        </div>
+        
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonies Section -->
+    <section id="testimonios" class="py-16">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-5xl mx-auto mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-playfair">श्रोता उदाहरण</h2>
+                <div class="w-32 h-1 bg-gradient-to-r from-amber-400 to-amber-600 mx-auto rounded-full mb-6"></div>
+                <p class="text-xl text-gray-600">दुनिया भर में "सुसमाचार" फैलाना</p>
+            </div>
+
+            <!-- Testimonies Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-12" id="testimoniesGrid">
+                <!-- Testimonies will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet the Ministers Section -->
+    <section id="ministers" class="py-16 bg-gradient-to-br from-red-50 to-slate-50 relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div class="absolute top-0 left-0 w-96 h-96 bg-red-200/20 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
+            <div class="absolute top-0 right-0 w-96 h-96 bg-rose-200/20 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+            <div class="absolute -bottom-8 left-20 w-96 h-96 bg-red-100/20 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
+        </div>
+
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-6xl mx-auto mb-12">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 font-playfair">
+                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-red-800">🌐 हमारी सुसमाचार आवाजें 🎤</span>
+                </h2>
+                <div class="w-32 h-1 bg-gradient-to-r from-red-500 to-red-700 mx-auto rounded-full mb-6"></div>
+                <p class="text-xl text-gray-600">विभिन्न भाषाओं में आशा का संदेश ले जाने वाली आवाजें</p>
+            </div>
+
+            <!-- Ministers Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Minister 1 -->
+                <div class="glass-card rounded-2xl p-6 text-center transform hover:scale-105 transition-all duration-300 shadow-xl backdrop-blur-lg">
+                    <div class="relative w-48 h-48 mx-auto mb-4">
+                        <div class="absolute inset-0 bg-gradient-to-br from-red-500/20 to-red-600/20 rounded-2xl blur-xl"></div>
+                        <img src="assets/Bridie.jpg" alt="बर्डी एम जोन्स" class="relative w-full h-full object-cover rounded-2xl shadow-lg">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">बर्डी एम जोन्स</h3>
+                    <p class="text-md text-red-600 mb-2">"द गॉस्पल वी1" की आवाज (अंग्रेजी)</p>
+                    <p class="text-sm text-gray-600">गॉड विल प्रोवाइड आउटरीच मिनिस्ट्री की प्रचारक। "द गॉस्पल" सीडी की लेखिका।</p>
+                </div>
+
+                <!-- Minister 2 -->
+                <div class="glass-card rounded-2xl p-6 text-center transform hover:scale-105 transition-all duration-300 shadow-xl backdrop-blur-lg">
+                    <div class="relative w-48 h-48 mx-auto mb-4">
+                        <div class="absolute inset-0 bg-gradient-to-br from-red-600/20 to-red-700/20 rounded-2xl blur-xl"></div>
+                        <img src="assets/Astha.jpg" alt="आस्था जोशी" class="relative w-full h-full object-cover rounded-2xl shadow-lg">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">आस्था जोशी</h3>
+                   <p class="text-lg text-red-600 mb-3">"द गॉस्पल वी6" (हिंदी) का वर्णन करते हुए</p>
+                        <p class="text-gray-600">गाजियाबाद, उत्तर प्रदेश, भारत में पेशेवर संगीतकार और वोकल ट्रेनर। संगीत मंत्रालय और वोकल प्रशिक्षण के लिए समर्पित।</p>
+                     
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-6xl mx-auto">
+                <!-- Mission Statement & Contact Info -->
+                <div class="mb-8 text-center">
+                    <h3 class="text-xl font-bold text-white mb-4 font-playfair">दुनिया के लिए सुसमाचार</h3>
+                    <p class="text-gray-400 text-sm mb-6 max-w-3xl mx-auto">
+                        हमारा संदेश Jango.com के माध्यम से अंतरराष्ट्रीय श्रोताओं तक पहुंचता है, 2016 से सेक्युलर म्यूजिक स्ट्रीम के साथ भगवान का वचन रणनीतिक रूप से रखा जाता है।
+                    </p>
+                    <p class="text-amber-400 text-sm italic mb-8">
+                        "धर्मी का फल जीवन का पेड़ है, और जो बुद्धिमान है वह लोगों को बचाता है।" - नीतिवचन 11:30
+                    </p>
+                </div>
+
+                <!-- Contact Information -->
+                <div id="contact" class="flex flex-wrap justify-center gap-x-12 gap-y-4 mb-8 text-sm scroll-mt-20">
+                    <div class="flex items-center space-x-2">
+                        <span class="text-amber-400">📧</span>
+                        <a href="mailto:Thegospelsavesus100@gmail.com" class="text-gray-300 hover:text-white transition-colors">Thegospelsavesus100@gmail.com</a>
+                    </div>
+
+                    <div class="flex items-center space-x-2">
+                        <span class="text-amber-400">📞</span>
+                        <a href="tel:404-709-9620" class="text-gray-300 hover:text-white transition-colors">404-709-9620</a>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <span class="text-amber-400">📬</span>
+                        <span class="text-gray-300">God Will Provide, P.O. Box 213, 75 Washington Street, Fairburn, GA 30213</span>
+                    </div>
+                </div>
+
+                <!-- Copyright -->
+                <div class="border-t border-gray-800 pt-4 text-center">
+                    <p class="text-gray-400 text-xs">कॉपीराइट ©2025 सुसमाचार हमें बचाता है द्वारा</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

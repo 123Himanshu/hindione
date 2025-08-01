@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>हमारे बारे में - सुसमाचार हमें बचाता है</title>
+    <meta name="description" content="हमारी सेवकाई और दुनिया भर में यीशु मसीह के सुसमाचार को फैलाने के मिशन के बारे में अधिक जानें।">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+</head>
+<body class="font-inter bg-gradient-to-br from-slate-50 to-blue-50">
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="fixed inset-0 bg-white/80 backdrop-blur-sm flex items-center justify-center z-[9999] hidden opacity-0 transition-opacity duration-300">
+        <div class="loader ease-linear rounded-full border-4 border-t-4 border-gray-200 h-12 w-12"></div>
+    </div>
+
+    <!-- Header -->
+    <header id="header" class="fixed top-0 w-full z-50 transition-all duration-300 bg-gray-200/90 backdrop-blur-lg border-b border-white/20 shadow-md animate-fadeIn">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex h-16 items-center justify-between">
+                <!-- Left Logo Section -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <div class="logo-container">
+                        <img src="assets/logo.jpg" alt="Logo" class="w-12 h-12 object-contain" />
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="flex items-center space-x-4 md:space-x-8">
+                    <a href="index.html" class="nav-link text-gray-600 hover:text-red text-sm md:text-base lg:text-xl font-medium transition-colors">होम</a>
+                    <a href="donate.html" class="nav-link text-gray-600 hover:text-red text-sm md:text-base lg:text-xl font-medium transition-colors">दान करें</a>
+                    <a href="about.html" class="nav-link text-gray-600 hover:text-red text-sm md:text-base lg:text-xl font-medium transition-colors">हमारे बारे में</a>
+                    <a href="#contact" class="nav-link text-gray-600 hover:text-red text-sm md:text-base lg:text-xl font-medium transition-colors">संपर्क करें</a>
+                </nav>
+
+                <!-- Right Logo Section -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <div class="logo-container">
+                        <img src="assets/logo.jpg" alt="Logo" class="w-12 h-12 object-contain" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Page Content -->
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section 
+            class="about-hero-image py-16 bg-cover bg-center bg-no-repeat relative"
+            style="background-image: url('assets/about.jpeg');"
+        >
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center max-w-4xl mx-auto">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4 font-playfair drop-shadow-lg">
+                        <span class="text-black">जानें</span> <span class="text-red-600">हमारी सेवकाई</span>
+                    </h1>
+                    <div class="w-32 h-1 bg-gradient-to-r from-amber-400 to-amber-600 mx-auto rounded-full mb-6"></div>
+                    <p class="text-lg md:text-xl text-black leading-relaxed drop-shadow">
+                        दुनिया भर में यीशु मसीह के सुसमाचार का प्रसार।
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ministry Services -->
+        <section id="ministers" class="py-16 bg-gradient-to-br from-red-50 to-slate-50 relative overflow-hidden">
+    <!-- Background Elements -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <div class="absolute top-0 left-0 w-96 h-96 bg-red-200/20 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
+        <div class="absolute top-0 right-0 w-96 h-96 bg-rose-200/20 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+        <div class="absolute -bottom-8 left-20 w-96 h-96 bg-red-100/20 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
+    </div>
+
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center max-w-6xl mx-auto mb-12">
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 font-playfair">
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-red-800">🌐 हमारे सेवाकारों से मिलें 🎤</span>
+            </h2>
+            <div class="w-32 h-1 bg-gradient-to-r from-red-500 to-red-700 mx-auto rounded-full mb-6"></div>
+            <p class="text-xl text-gray-600">विभिन्न भाषाओं में सुसमाचार साझा करने के लिए समर्पित</p>
+        </div>
+
+        <!-- Ministers Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Minister 1 -->
+            <div class="glass-card rounded-2xl p-8 text-center transform hover:scale-105 transition-all duration-300 shadow-xl backdrop-blur-lg">
+                <div class="relative w-64 h-64 mx-auto mb-6">
+                    <div class="absolute inset-0 bg-gradient-to-br from-red-500/20 to-red-600/20 rounded-2xl blur-xl"></div>
+                    <img src="assets/Bridie.jpg" alt="BIRDIE M JONES" class="relative w-full h-full object-cover rounded-2xl shadow-lg">
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">BIRDIE M JONES</h3>
+                <p class="text-lg text-red-600 mb-3">"द गॉस्पल वी1" (अंग्रेज़ी) का वर्णन करते हुए</p>
+                <p class="text-gray-600">आउटरिच मंत्रालय God Will Provide (अटलांटा, जॉर्जिया) की सुसमाचार प्रचारक। "द गॉस्पेल" (स्पोकन वर्ड) सीडी की लेखिका, जो पूरी दुनिया में Pure Gold Gospel Singers के माध्यम से सुनी जाती है।</p>
+            </div>
+
+            <!-- Minister 2 -->
+            <div class="glass-card rounded-2xl p-8 text-center transform hover:scale-105 transition-all duration-300 shadow-xl backdrop-blur-lg">
+                <div class="relative w-64 h-64 mx-auto mb-6">
+                    <div class="absolute inset-0 bg-gradient-to-br from-red-600/20 to-red-700/20 rounded-2xl blur-xl"></div>
+                    <img src="assets/Sol.jpg" alt="SOL PERERYA" class="relative w-full h-full object-cover rounded-2xl shadow-lg">
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">SOL PERERYA</h3>
+                <p class="text-lg text-red-600 mb-3">"द गॉस्पल वी2" (स्पेनिश) का वर्णन करते हुए</p>
+                <p class="text-gray-600">अर्जेंटीना में संगीतकार और पंजीकृत नर्स। संगीत और स्वास्थ्य मंत्रालय के माध्यम से सुसमाचार फैलाने के लिए समर्पित।</p>
+            </div>
+
+            <!-- Minister 3 -->
+            <div class="glass-card rounded-2xl p-8 text-center transform hover:scale-105 transition-all duration-300 shadow-xl backdrop-blur-lg">
+                <div class="relative w-64 h-64 mx-auto mb-6">
+                    <div class="absolute inset-0 bg-gradient-to-br from-red-400/20 to-red-500/20 rounded-2xl blur-xl"></div>
+                    <img src="assets/JANET.jpg" alt="JANET OLUFUNKE OLAITAN" class="relative w-full h-full object-cover rounded-2xl shadow-lg">
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">JANET OLUFUNKE OLAITAN</h3>
+                <p class="text-lg text-red-600 mb-3">"द गॉस्पल वी3" (योरूबा) का वर्णन करते हुए</p>
+                <p class="text-gray-600">सुसमाचार प्रचारक, सेवानिवृत्त पेशेवर शिक्षिका और गीतकार। नाइजीरिया के ओसुन राज्य से। शिक्षा और आराधना मंत्रालय के प्रति समर्पित।</p>
+            </div>
+
+            <!-- Minister 4 -->
+            <div class="glass-card rounded-2xl p-8 text-center transform hover:scale-105 transition-all duration-300 shadow-xl backdrop-blur-lg">
+                <div class="relative w-64 h-64 mx-auto mb-6">
+                    <div class="absolute inset-0 bg-gradient-to-br from-red-500/20 to-red-600/20 rounded-2xl blur-xl"></div>
+                    <img src="assets/SUSSAN.jpg" alt="SUSSAN CHINYERE COLLINS" class="relative w-full h-full object-cover rounded-2xl shadow-lg">
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">SUSSAN CHINYERE COLLINS</h3>
+                <p class="text-lg text-red-600 mb-3">"द गॉस्पल वी4" (इग्बो) का वर्णन करते हुए</p>
+                <p class="text-gray-600">नाइजीरिया के इमो राज्य में Ideato South की पेशेवर शिक्षिका। शिक्षा के माध्यम से ईश्वर का वचन फैलाने के लिए समर्पित।</p>
+            </div>
+
+            <!-- Minister 5 -->
+            <div class="glass-card rounded-2xl p-8 text-center transform hover:scale-105 transition-all duration-300 shadow-xl backdrop-blur-lg">
+                <div class="relative w-64 h-64 mx-auto mb-6">
+                    <div class="absolute inset-0 bg-gradient-to-br from-red-600/20 to-red-700/20 rounded-2xl blur-xl"></div>
+                    <img src="assets/ISAAC.jpg" alt="ISAAC OLAMIDE SAMSON" class="relative w-full h-full object-cover rounded-2xl shadow-lg">
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">ISAAC OLAMIDE SAMSON</h3>
+                <p class="text-lg text-red-600 mb-3">"द गॉस्पल वी5" (हौसा) का वर्णन करते हुए</p>
+                <p class="text-gray-600">नाइजीरिया के ओगुन राज्य से, चर्च ऑफ सेलेस्टियल क्राइस्ट में पूर्णकालिक मंत्री। हौसा भाषा में पारंगत। मंत्रालय के कार्य के लिए समर्पित।</p>
+            </div>
+
+            <!-- Minister 6 -->
+            <div class="glass-card rounded-2xl p-8 text-center transform hover:scale-105 transition-all duration-300 shadow-xl backdrop-blur-lg">
+                <div class="relative w-64 h-64 mx-auto mb-6">
+                    <div class="absolute inset-0 bg-gradient-to-br from-red-500/20 to-red-600/20 rounded-2xl blur-xl"></div>
+                    <img src="assets/Astha.jpg" alt="AASTHA JOSHI" class="relative w-full h-full object-cover rounded-2xl shadow-lg">
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">AASTHA JOSHI</h3>
+                <p class="text-lg text-red-600 mb-3">"द गॉस्पल वी6" (हिंदी) का वर्णन करते हुए</p>
+                <p class="text-gray-600">गाज़ियाबाद, उत्तर प्रदेश, भारत में एक पेशेवर संगीतकार और वोकल कोच। संगीत मंत्रालय और वोकल प्रशिक्षण के प्रति उत्साही।</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-6xl mx-auto">
+                <!-- Mission Statement & Contact Info -->
+                <div class="mb-8 text-center">
+                    <h3 class="text-xl font-bold text-white mb-4 font-playfair">दुनिया के लिए सुसमाचार</h3>
+                    <p class="text-gray-400 text-sm mb-6 max-w-3xl mx-auto">
+                        हमारा संदेश Jango.com के माध्यम से अंतरराष्ट्रीय श्रोताओं तक पहुंचता है, 2016 से सेक्युलर म्यूजिक स्ट्रीम के साथ भगवान का वचन रणनीतिक रूप से रखा जाता है।
+                    </p>
+                    <p class="text-amber-400 text-sm italic mb-8">
+                        "धर्मी का फल जीवन का पेड़ है, और जो बुद्धिमान है वह लोगों को बचाता है।" - नीतिवचन 11:30
+                    </p>
+                </div>
+
+                <!-- Contact Information -->
+                <div id="contact" class="flex flex-wrap justify-center gap-x-12 gap-y-4 mb-8 text-sm scroll-mt-20">
+                    <div class="flex items-center space-x-2">
+                        <span class="text-amber-400">📧</span>
+                        <a href="mailto:Thegospelsavesus100@gmail.com" class="text-gray-300 hover:text-white transition-colors">Thegospelsavesus100@gmail.com</a>
+                    </div>
+
+                    <div class="flex items-center space-x-2">
+                        <span class="text-amber-400">📞</span>
+                        <a href="tel:404-709-9620" class="text-gray-300 hover:text-white transition-colors">404-709-9620</a>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <span class="text-amber-400">📬</span>
+                        <span class="text-gray-300">God Will Provide, P.O. Box 213, 75 Washington Street, Fairburn, GA 30213</span>
+                    </div>
+                </div>
+
+                <!-- Copyright -->
+                <div class="border-t border-gray-800 pt-4 text-center">
+                    <p class="text-gray-400 text-xs">कॉपीराइट ©2025 सुसमाचार हमें बचाता है द्वारा</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

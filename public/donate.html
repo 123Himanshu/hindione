@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>दान करें - सुसमाचार हमें बचाता है</title>
+    <meta name="description" content="रेडियो एयरप्ले के माध्यम से दुनिया भर में सुसमाचार फैलाने के लिए दान के साथ हमारी सेवकाई का समर्थन करें।">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+</head>
+<body class="font-inter bg-gradient-to-br from-slate-50 to-blue-50">
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="fixed inset-0 bg-white/80 backdrop-blur-sm flex items-center justify-center z-[9999] hidden opacity-0 transition-opacity duration-300">
+        <div class="loader ease-linear rounded-full border-4 border-t-4 border-gray-200 h-12 w-12"></div>
+    </div>
+
+    <!-- Header -->
+    <header id="header" class="fixed top-0 w-full z-50 transition-all duration-300 bg-gray-200/90 backdrop-blur-lg border-b border-white/20 shadow-md animate-fadeIn">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex h-16 items-center justify-between">
+                <!-- Left Logo Section -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <div class="logo-container">
+                        <img src="assets/logo.jpg" alt="Logo" class="w-12 h-12 object-contain" />
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="flex items-center space-x-4 md:space-x-8">
+                    <a href="index.html" class="nav-link text-gray-600 hover:text-red text-sm md:text-base lg:text-xl font-medium transition-colors">होम</a>
+                    <a href="donate.html" class="nav-link text-gray-600 hover:text-red text-sm md:text-base lg:text-xl font-medium transition-colors">दान करें</a>
+                    <a href="about.html" class="nav-link text-gray-600 hover:text-red text-sm md:text-base lg:text-xl font-medium transition-colors">हमारे बारे में</a>
+                    <a href="#contact" class="nav-link text-gray-600 hover:text-red text-sm md:text-base lg:text-xl font-medium transition-colors">संपर्क करें</a>
+                </nav>
+
+                <!-- Right Logo Section -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <div class="logo-container">
+                        <img src="assets/logo.jpg" alt="Logo" class="w-12 h-12 object-contain" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Donation Page Content -->
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section 
+            class="donate-hero-image py-16 bg-cover bg-center bg-no-repeat relative"
+            style="background-image: url('assets/about.jpeg');"
+        >
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-4xl mx-auto">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4 font-playfair drop-shadow-lg">
+                        <span class="text-black">दान</span> <span class="text-red-600">के विकल्प</span>
+                    </h1>
+                    <div class="w-32 h-1 bg-gradient-to-r from-amber-400 to-amber-600 mx-auto rounded-full mb-6"></div>
+                    <p class="text-lg md:text-xl text-black leading-relaxed drop-shadow">
+                        रेडियो एयरप्ले के माध्यम से सुसमाचार फैलाने का समर्थन करें
+                    </p>
+                </div>
+            </div>
+        </section>
+
+             <!-- दान विकल्प -->
+        <section class="py-16 bg-gray-100">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-7xl mx-auto">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <!-- मेल कार्ड -->
+                        <div class="glass-card rounded-3xl p-6 shadow-xl bg-white transform transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
+                            <div class="relative z-10">
+                                <div class="text-center mb-4">
+                                    <div class="w-16 h-16 bg-gradient-to-br from-gray-50 to-gray-100 rounded-full mx-auto mb-3 flex items-center justify-center transform transition-transform duration-300 group-hover:scale-110">
+                                        <svg class="w-8 h-8 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-2 font-playfair">पोस्टल चेक</h3>
+                                    <div class="inline-block bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">
+                                        डाक द्वारा भेजें
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-gray-50 rounded-2xl p-4">
+                                    <h4 class="text-base font-semibold text-gray-900 mb-3">चेक इस नाम पर लिखें:</h4>
+                                    <ul class="space-y-2">
+                                        <li class="flex items-center space-x-2">
+                                            <svg class="shrink-0 w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                            </svg>
+                                            <span class="text-gray-900 text-sm">भगवान प्रदान करेगा</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <svg class="shrink-0 w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                            </svg>
+                                            <span class="font-mono text-gray-900 text-sm">P O Box 213</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <svg class="shrink-0 w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                            </svg>
+                                            <span class="font-mono text-gray-900 text-sm">Fairburn, GA 30213</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- लाइट गोल्ड कार्ड: पेपाल -->
+                        <div class="relative">
+                            <div class="absolute left-1/2 -top-3 -translate-x-1/2 z-30">
+                                <div class="bg-gradient-to-r from-amber-300 to-amber-400 text-black px-4 py-1 rounded-full text-sm font-bold shadow-lg border-2 border-white">
+                                    अनुशंसित
+                                </div>
+                            </div>
+                            <div class="glass-card rounded-3xl p-6 shadow-2xl bg-gradient-to-b from-amber-50 via-amber-100/50 to-white border-2 border-amber-200 lg:scale-105 lg:-translate-y-2 relative z-20">
+                                <div class="text-center mb-4 relative mt-4">
+                                    <div class="w-16 h-16 bg-gradient-to-br from-amber-100 to-amber-200 rounded-full flex items-center justify-center mx-auto mb-3">
+                                        <img src="assets/pngimg.com - paypal_PNG7.png" alt="PayPal" class="w-14 h-14 object-contain">
+                                    </div>
+                                    <h3 class="text-xl font-bold text-gray-800 mb-2 font-playfair">पेपाल</h3>
+                                    <span class="inline-block bg-amber-100 text-amber-800 font-semibold px-3 py-1 rounded-full text-xs mb-2">सुरक्षित दान</span>
+                                </div>
+                                <div class="space-y-4">
+                                    <div class="text-center">
+                                        <p class="text-gray-700 mb-3 text-sm">पेपाल पर अपना डेबिट या क्रेडिट कार्ड इस्तेमाल करें</p>
+                                        <div class="h-8"></div>
+                                    </div>
+                                    <div class="donation-form">
+                                        <form action="https://www.paypal.com/donate" method="post" target="_top" id="paypalForm">
+                                            <input type="hidden" name="business" value="jones8874@bellsouth.net">
+                                            <input type="hidden" name="no_recurring" value="0">
+                                            <input type="hidden" name="item_name" value="Gospel Ministry Support">
+                                            <input type="hidden" name="currency_code" value="USD">
+                                            <button type="submit" class="w-full py-3 rounded-full flex items-center justify-center font-bold text-base bg-gradient-to-r from-amber-400 to-amber-500 text-gray-800 shadow-lg uppercase tracking-wider hover:shadow-xl transform transition-all duration-300 hover:scale-105">
+                                                <span>पेपाल से दान करें</span>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- पेमेंट ऐप्स कार्ड -->
+                        <div class="glass-card rounded-3xl p-6 shadow-xl bg-white transform transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
+                            <div class="relative z-10">
+                                <div class="text-center mb-4">
+                                    <div class="w-16 h-16 bg-gradient-to-br from-gray-50 to-gray-100 rounded-full mx-auto mb-3 flex items-center justify-center transform transition-transform duration-300 group-hover:scale-110">
+                                        <img src="assets/cashApp.png" alt="कैश ऐप" class="w-8 h-8 object-contain">
+                                    </div>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-2 font-playfair">कैश ऐप</h3>
+                                    <div class="inline-block bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">
+                                        डिजिटल ट्रांसफर
+                                    </div>
+                                </div>
+                                <div class="space-y-3">
+                                    <div class="bg-gray-50 rounded-2xl p-3">
+                                        <div class="flex items-center space-x-2 mb-1">
+                                            <svg class="shrink-0 w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                                            </svg>
+                                            <div class="font-semibold text-gray-900 text-sm">कैश ऐप:</div>
+                                        </div>
+                                        <div class="text-gray-700 font-mono text-sm">$gospeltruth01</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ज़ेल कार्ड -->
+                        <div class="glass-card rounded-3xl p-6 shadow-xl bg-white transform transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
+                            <div class="relative z-10">
+                                <div class="text-center mb-4">
+                                    <div class="w-16 h-16 bg-gradient-to-br from-gray-50 to-gray-100 rounded-full mx-auto mb-3 flex items-center justify-center transform transition-transform duration-300 group-hover:scale-110">
+                                        <img src="assets/Zelle.png" alt="Zelle" class="w-10 h-10 object-contain">
+                                    </div>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-2 font-playfair">Zelle</h3>
+                                    <div class="inline-block bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">
+                                        सुरक्षित भुगतान
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-gray-50 rounded-2xl p-3">
+                                    <div class="flex items-center space-x-2 mb-1">
+                                        <svg class="shrink-0 w-4 h-4 text-[#6d1ed4]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                        </svg>
+                                        <div class="font-semibold text-gray-900 text-sm">ईमेल:</div>
+                                    </div>
+                                    <div class="text-gray-700 font-mono text-sm">thegospelsaves100@gmail.com</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Thank You Section -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-4xl mx-auto">
+                    <div class="glass-card p-10 rounded-3xl bg-gradient-to-b from-red-50 to-white shadow-xl">
+                        <div class="mb-8">
+                            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-playfair">दान करने के लिए धन्यवाद</h2>
+                            <div class="w-32 h-1 bg-gradient-to-r from-red-500 to-red-600 mx-auto rounded-full mb-4"></div>
+                            <p class="text-lg md:text-xl text-gray-600 leading-relaxed">आपकी उदारता दुनिया भर में सुसमाचार फैलाने में मदद करती है</p>
+                        </div>
+
+                        <!-- Impact Stats -->
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-6xl mx-auto">
+                <!-- Mission Statement & Contact Info -->
+                <div class="mb-8 text-center">
+                    <h3 class="text-xl font-bold text-white mb-4 font-playfair">दुनिया के लिए सुसमाचार</h3>
+                    <p class="text-gray-400 text-sm mb-6 max-w-3xl mx-auto">
+                        हमारा संदेश Jango.com के माध्यम से अंतरराष्ट्रीय श्रोताओं तक पहुंचता है, 2016 से सेक्युलर म्यूजिक स्ट्रीम के साथ भगवान का वचन रणनीतिक रूप से रखा जाता है।
+                    </p>
+                    <p class="text-amber-400 text-sm italic mb-8">
+                        "धर्मी का फल जीवन का पेड़ है, और जो बुद्धिमान है वह लोगों को बचाता है।" - नीतिवचन 11:30
+                    </p>
+                </div>
+
+                <!-- Contact Information -->
+                <div id="contact" class="flex flex-wrap justify-center gap-x-12 gap-y-4 mb-8 text-sm scroll-mt-20">
+                    <div class="flex items-center space-x-2">
+                        <span class="text-amber-400">📧</span>
+                        <a href="mailto:Thegospelsavesus100@gmail.com" class="text-gray-300 hover:text-white transition-colors">Thegospelsavesus100@gmail.com</a>
+                    </div>
+
+                    <div class="flex items-center space-x-2">
+                        <span class="text-amber-400">📞</span>
+                        <a href="tel:404-709-9620" class="text-gray-300 hover:text-white transition-colors">404-709-9620</a>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <span class="text-amber-400">📬</span>
+                        <span class="text-gray-300">God Will Provide, P.O. Box 213, 75 Washington Street, Fairburn, GA 30213</span>
+                    </div>
+                </div>
+
+                <!-- Copyright -->
+                <div class="border-t border-gray-800 pt-4 text-center">
+                    <p class="text-gray-400 text-xs">कॉपीराइट ©2025 सुसमाचार हमें बचाता है द्वारा</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script>
+        // PayPal form handling
+        const paypalForm = document.getElementById('paypalForm');
+        if (paypalForm) {
+            paypalForm.addEventListener('submit', () => {
+                // Show loading state
+                const loadingOverlay = document.getElementById('loadingOverlay');
+                if (loadingOverlay) {
+                    loadingOverlay.classList.remove("hidden");
+                    loadingOverlay.classList.add("visible");
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,352 @@
+/* Tailwind Configuration */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap");
+
+:root {
+  --light-red: #ffebee;
+  --red: #e53935;
+  --gray: #757575;
+  --white: #ffffff;
+  --gradient-primary: linear-gradient(135deg, #e53935 0%, #c62828 100%);
+  --gradient-secondary: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%);
+}
+
+/* Font Families */
+.font-inter {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.spiritual-text {
+  font-family: "Crimson Text", Georgia, "Times New Roman", serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.spiritual-script {
+  font-family: "Crimson Text", Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* Colors */
+.text-red {
+  color: var(--red);
+}
+
+.text-gray {
+  color: var(--gray);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.bg-light-red {
+  background-color: var(--light-red);
+}
+
+.bg-red {
+  background-color: var(--red);
+}
+
+.bg-gray {
+  background-color: var(--gray);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+/* Gradients */
+.gradient-primary {
+  background: var(--gradient-primary);
+}
+
+.gradient-secondary {
+  background: var(--gradient-secondary);
+}
+
+.gradient-text {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-gradient-primary {
+  background: var(--gradient-primary);
+}
+
+.bg-gradient-secondary {
+  background: var(--gradient-secondary);
+}
+
+/* Effects */
+.gentle-glow {
+  filter: drop-shadow(0 0 15px rgba(229, 57, 53, 0.3));
+  transition: all 0.3s ease;
+}
+
+.gentle-glow:hover {
+  filter: drop-shadow(0 0 20px rgba(229, 57, 53, 0.5));
+}
+
+.text-glow {
+  text-shadow: 0 0 10px rgba(229, 57, 53, 0.2);
+}
+
+/* Glass Card Effects */
+.glass-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(229, 57, 53, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(229, 57, 53, 0.1), transparent);
+  transition: left 0.8s ease;
+}
+
+.glass-card:hover::before {
+  left: 100%;
+}
+
+/* Logo Space */
+.logo-space {
+  width: 60px;
+  height: 60px;
+  border: 2px dashed rgba(229, 57, 53, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(229, 57, 53, 0.05);
+  transition: all 0.3s ease;
+}
+
+.logo-space:hover {
+  border-color: rgba(229, 57, 53, 0.5);
+  background: rgba(229, 57, 53, 0.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes gentle-float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes soft-pulse {
+  0%,
+  100% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes gentle-wave {
+  0%,
+  100% {
+    height: 20px;
+  }
+  50% {
+    height: 35px;
+  }
+}
+
+/* Hero Background */
+.hero-background {
+  background: radial-gradient(circle at 20% 80%, rgba(229, 57, 53, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 235, 238, 0.05) 0%, transparent 50%),
+    linear-gradient(135deg, #ffffff 0%, #ffebee 100%);
+}
+
+/* Mobile Header Image Hide */
+@media (max-width: 768px) {
+  .hero-background-image {
+    display: none;
+  }
+
+  .about-hero-image {
+    display: none;
+  }
+
+  .donate-hero-image {
+    display: none;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .donation-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .logo-space {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .gentle-float,
+  .soft-pulse,
+  .audio-wave,
+  .vinyl-spinning {
+    animation: none;
+  }
+
+  .donation-card,
+  .btn-primary,
+  .testimony-card {
+    transition: none;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--light-red);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gradient-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gradient-secondary);
+}
+
+/* Print Styles */
+@media print {
+  .glass-card {
+    background: white !important;
+    box-shadow: none !important;
+    border: 1px solid #ccc !important;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    background: #333 !important;
+    color: white !important;
+  }
+}
+
+/* Loading Overlay */
+#loadingOverlay {
+  transition: opacity 0.3s ease-in-out;
+}
+
+#loadingOverlay.visible {
+  opacity: 1;
+  display: flex; /* Ensure it's visible when active */
+}
+
+.loader {
+  border-top-color: var(--red); /* Spinner color */
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.nav-link {
+  color: #555; /* A slightly darker gray for non-active links */
+}
+
+.nav-link.active {
+  color: var(--red);
+  font-weight: 600;
+}
+
+.audio-wave {
+  width: 3px;
+  height: 15px;
+  animation: wave 1s ease-in-out infinite;
+  border-radius: 3px;
+}
+
+.audio-wave:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.audio-wave:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.audio-wave:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.audio-wave:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.audio-wave:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.audio-wave:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.audio-wave:nth-child(8) {
+  animation-delay: 0.7s;
+}
+.audio-wave:nth-child(9) {
+  animation-delay: 0.8s;
+}
+.audio-wave:nth-child(10) {
+  animation-delay: 0.9s;
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    height: 15px;
+  }
+  50% {
+    height: 30px;
+  }
+}
+
+.visible-waves {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.hidden-waves {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
