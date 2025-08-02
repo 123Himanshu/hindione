@@ -43,6 +43,24 @@
                     <a href="donate.html" class="nav-link text-gray-600 hover:text-red text-sm md:text-base lg:text-xl font-medium transition-colors">दान करें</a>
                     <a href="about.html" class="nav-link text-gray-600 hover:text-red text-sm md:text-base lg:text-xl font-medium transition-colors">हमारे बारे में</a>
                     <a href="#contact" class="nav-link text-gray-600 hover:text-red text-sm md:text-base lg:text-xl font-medium transition-colors">संपर्क करें</a>
+                    
+                    <!-- Language Switcher -->
+                    <div class="language-switcher">
+                        <button id="languageButton" class="language-button">
+                            <span>हिंदी</span>
+                            <svg class="chevron-icon w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div id="languageDropdown" class="language-dropdown">
+                            <a href="index.html" class="language-option active">
+                                <span>हिंदी</span>
+                            </a>
+                            <a href="english/index.html" class="language-option">
+                                <span>English</span>
+                            </a>
+                        </div>
+                    </div>
                 </nav>
 
                 <!-- Right Logo Section -->
@@ -142,15 +160,9 @@
                                         <div class="h-8"></div>
                                     </div>
                                     <div class="donation-form">
-                                        <form action="https://www.paypal.com/donate" method="post" target="_top" id="paypalForm">
-                                            <input type="hidden" name="business" value="jones8874@bellsouth.net">
-                                            <input type="hidden" name="no_recurring" value="0">
-                                            <input type="hidden" name="item_name" value="Gospel Ministry Support">
-                                            <input type="hidden" name="currency_code" value="USD">
-                                            <button type="submit" class="w-full py-3 rounded-full flex items-center justify-center font-bold text-base bg-gradient-to-r from-amber-400 to-amber-500 text-gray-800 shadow-lg uppercase tracking-wider hover:shadow-xl transform transition-all duration-300 hover:scale-105">
-                                                <span>पेपाल से दान करें</span>
-                                            </button>
-                                        </form>
+                                        <a href="https://www.paypal.com/donate/?hosted_button_id=RHAB55HLGNDEL" target="_blank" rel="noopener noreferrer" class="w-full py-3 rounded-full flex items-center justify-center font-bold text-base bg-gradient-to-r from-amber-400 to-amber-500 text-gray-800 shadow-lg uppercase tracking-wider hover:shadow-xl transform transition-all duration-300 hover:scale-105">
+                                            <span>पेपाल से दान करें</span>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -274,19 +286,5 @@
 
     <!-- JavaScript -->
     <script src="js/main.js"></script>
-    <script>
-        // PayPal form handling
-        const paypalForm = document.getElementById('paypalForm');
-        if (paypalForm) {
-            paypalForm.addEventListener('submit', () => {
-                // Show loading state
-                const loadingOverlay = document.getElementById('loadingOverlay');
-                if (loadingOverlay) {
-                    loadingOverlay.classList.remove("hidden");
-                    loadingOverlay.classList.add("visible");
-                }
-            });
-        }
-    </script>
 </body>
 </html>

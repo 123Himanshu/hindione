@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Banner Image -->
+    <div class="text-center pt-20 mb-0">
+        <img src="../assets/lamb.png" alt="Behold the Lamb of God, which taketh away the sin of the world! - John 1:29" class="max-w-4xl mx-auto w-full">
+    </div>
+    <title>The Gospel Saves Us - Spreading Hope Worldwide</title>
+    <meta name="description" content="Evangelist Jones reaches people worldwide with the Gospel of Jesus Christ through Pure Gold Gospel Singers. Support our ministry today.">
+    <meta name="keywords" content="gospel, jesus, ministry, donation, christian, faith, salvation">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="../favicon.ico">
+</head>
+<body class="font-inter bg-gradient-to-br from-slate-50 to-blue-50 border-4 border-red-600">
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="fixed inset-0 bg-white/80 backdrop-blur-sm flex items-center justify-center z-[9999] hidden opacity-0 transition-opacity duration-300">
+        <div class="loader ease-linear rounded-full border-4 border-t-4 border-gray-200 h-12 w-12"></div>
+    </div>
+
+    <!-- Header -->
+    <header id="header" class="fixed top-0 w-full z-50 transition-all duration-300 bg-gray-200/90 backdrop-blur-lg border-b border-white/20 shadow-md animate-fadeIn">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex h-16 items-center justify-between">
+                <!-- Left Logo Section -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <div class="logo-container">
+                        <img src="../assets/logo.jpg" alt="Logo" class="w-12 h-12 object-contain" />
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="flex items-center space-x-4 md:space-x-8">
+                    <a href="index.html" class="nav-link text-gray-600 hover:text-red text-sm md:text-base lg:text-xl font-medium transition-colors">Home</a>
+                    <a href="donate.html" class="nav-link text-gray-600 hover:text-red text-sm md:text-base lg:text-xl font-medium transition-colors">Donate</a>
+                    <a href="about.html" class="nav-link text-gray-600 hover:text-red text-sm md:text-base lg:text-xl font-medium transition-colors">About Us</a>
+                    <a href="#contact" class="nav-link text-gray-600 hover:text-red text-sm md:text-base lg:text-xl font-medium transition-colors">Contact</a>
+                    
+                    <!-- Language Switcher -->
+                    <div class="language-switcher">
+                        <button id="languageButton" class="language-button">
+                            <span>English</span>
+                            <svg class="chevron-icon w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div id="languageDropdown" class="language-dropdown">
+                            <a href="/english/index.html" class="language-option active">
+                                <span>English</span>
+                            </a>
+                            <a href="../index.html" class="language-option">
+                                <span>हिंदी</span>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- Right Logo Section -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <div class="logo-container">
+                        <img src="../assets/logo.jpg" alt="Logo" class="w-12 h-12 object-contain" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-20 py-16 flex items-center justify-center relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0">
+            <div class="absolute top-20 left-20 w-32 h-32 bg-gray-100 rounded-full"></div>
+            <div class="absolute bottom-20 right-20 w-40 h-40 bg-gray-200 rounded-full"></div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gray-50 rounded-full"></div>
+        </div>
+
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-6xl mx-auto">
+                
+                <!-- Main Title -->
+                <div class="mb-8">
+                    <h1 class="text-4xl md:text-7xl lg:text-8xl font-bold text-gray-900 mb-4 leading-tight font-playfair">
+                        <span>The Gospel</span> <span class="text-red-600">Saves Us</span>
+                    </h1>
+                    <h3 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-700 mb-8 font-playfair">Jesus Saves</h3>
+
+                    <!-- Elegant Divider -->
+                    <div class="flex items-center justify-center space-x-6 mb-12">
+                        <div class="w-24 h-0.5 bg-gray-400"></div>
+                        <div class="w-3 h-3 bg-red-600 rounded-full"></div>
+                        <div class="w-24 h-0.5 bg-gray-400"></div>
+                    </div>
+                </div>
+
+                <!-- Description -->
+                <div class="max-w-6xl mx-auto mb-12">
+                    <div class="glass-card p-6 rounded-3xl mb-8">
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 font-playfair text-center">Our Mission</h2>
+                        <div class="w-32 h-1 bg-gradient-to-r from-red-500 to-red-700 mx-auto rounded-full mb-8"></div>
+                        <p class="text-base md:text-lg text-gray-800 leading-relaxed mb-4">
+                            Evangelist Jones by way of Pure Gold Gospel Singers is sharing the transformative power of the gospel through compelling spoken word recordings. She is narrating in the English Language, Sister Sol Pereyra is narrating in Spanish, Evangelist Janet Olaitan is narrating in Yoruba, Minister Susan Collins is narrating in Igbo, Minister Isaac Samson is narrating in Hausa, and Sister Aastha Joshi is narrating in Hindi.
+                        </p>
+                        <p class="text-base md:text-lg text-gray-800 leading-relaxed mb-4">
+                            Our message reaches international audiences through Jango.com using Radio Airplay Platform, strategically placing God's Word alongside secular music streams. This concept was birth in 2016, but the ministry didn’t ask for Donors generous donations until 2024.
+                        </p>
+                        <p class="text-base md:text-lg text-gray-800 leading-relaxed mb-4">
+                            Your donations directly support our airtime costs, enabling continuous broadcasting to listeners worldwide.
+                        </p>
+                        <p class="text-base md:text-lg text-gray-800 leading-relaxed mb-4 italic font-medium">
+                            As Proverbs 11:30 reminds us:<br>
+                            "The fruit of the righteous is a tree of life, and the one who is wise saves lives."
+                        </p>
+                        <p class="text-base md:text-lg text-gray-800 leading-relaxed mb-4">
+                            By partnering with us through your 'seed of love' donation, you become an integral part of our mission to spread hope, faith, and salvation to listeners across the globe. This Spoken Word is being played in all genres ministering to the listeners of why we must be saved and how to be saved.
+                        </p>
+                        <p class="text-base md:text-lg text-gray-800 leading-relaxed mb-4">
+                            Together, we can ensure God's message continues to touch hearts and transform lives.
+                        </p>
+                        <p class="text-base md:text-lg text-gray-800 leading-relaxed">
+                            The Ministry is asking for your Financial Donation to help support the Cost of Radio Airplay Charges.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                        <div class="feature-card glass-card p-6 rounded-2xl text-center transition-transform duration-300">
+                            <div class="w-16 h-16 bg-gradient-to-br from-red-500 to-red-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.348 14.651a3.75 3.75 0 010-5.303m5.304 0a3.75 3.75 0 010 5.303m-7.425 2.122a6.75 6.75 0 010-9.546m9.546 0a6.75 6.75 0 010 9.546M5.106 18.894c3.808-3.808 9.98-3.808 13.788 0"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3">Radio Airplay</h3>
+                            <p class="text-gray-600">Various fees are listed for spreading the message on radio airplay charts.</p>
+                        </div>
+
+                        <div class="feature-card glass-card p-6 rounded-2xl text-center scale-105 group hover:scale-110 transition-transform duration-300 relative overflow-hidden bg-gradient-to-br from-amber-50 to-amber-100 border-4 border-amber-500">
+                            
+                            <div class="relative z-10">
+                                <div class="w-16 h-16 bg-gradient-to-br from-amber-500 to-amber-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-semibold text-gray-900 mb-3">Your Donation</h3>
+                                <p class="text-amber-700 font-semibold text-lg mb-6">Will you donate $12 or more to help with the cost?</p>
+                                <a href="donate.html" class="inline-flex items-center px-6 py-2 rounded-full text-lg font-semibold text-white bg-gradient-to-r from-amber-500 to-amber-700 hover:from-amber-600 hover:to-amber-800 transition-all duration-300 shadow-md hover:shadow-lg group">
+                                    <span>Donate Now</span>
+                                    <svg class="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="feature-card glass-card p-6 rounded-2xl text-center transition-transform duration-300">
+                            <div class="w-16 h-16 bg-gradient-to-br from-sky-500 to-sky-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3">Listen</h3>
+                            <p class="text-gray-600">Click the play button to hear what you're helping us do.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Donation Chart -->
+                <div class="max-w-6xl mx-auto glass-card rounded-3xl p-6 md:p-10 mb-8">
+                    <div class="text-center mb-8">
+                        <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-playfair">Radio Airplay Chart</h3>
+                        <div class="w-32 h-1 bg-gradient-to-r from-red-400 to-red-600 mx-auto rounded-full mb-4"></div>
+                        <p class="text-lg text-gray-600">Choose your support level for spreading the Gospel</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="pricing-card bg-white border border-red-500 p-8 rounded-2xl text-gray-900 text-center group hover:scale-105 transition-transform duration-300 shadow-xl">
+                            <div class="w-16 h-16 bg-gradient-to-br from-red-500 to-red-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8" fill="white" viewBox="0 0 24 24">
+                                    <path d="M9 3v12.26A3.99 3.99 0 0 0 8 15a4 4 0 1 0 4 4V8h6V3H9z"/>
+                                </svg>
+                            </div>
+                            <div class="text-xl font-bold mb-2">Intro</div>
+                            <div class="text-2xl font-bold mb-2">$12</div>
+                            <div class="text-sm opacity-75 mt-2">Initial Support</div>
+                        </div>
+
+                        <div class="pricing-card bg-white border border-amber-500 p-8 rounded-2xl text-gray-900 text-center group hover:scale-105 transition-transform duration-300 shadow-xl">
+                            <div class="w-16 h-16 bg-gradient-to-br from-amber-500 to-amber-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9v-8h2v8zm4 0h-2v-8h2v8z"/></svg>
+                            </div>
+                            <div class="text-xl font-bold mb-2">Gold</div>
+                            <div class="text-2xl font-bold mb-2">$33</div>
+                            <div class="text-sm opacity-75 mt-2">Extended Impact</div>
+                        </div>
+
+                        <div class="pricing-card bg-white border border-gray-500 p-8 rounded-2xl text-gray-900 text-center group hover:scale-105 transition-transform duration-300 shadow-xl">
+                            <div class="w-16 h-16 bg-gradient-to-br from-gray-500 to-gray-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M20 9.34l-5.46-1.57-2.61-4.9c-.3-.5-1.1-.5-1.4 0L9.46 7.77 4 9.34c-.8.2-1.12 1.1-.5 1.7l3.96 3.86-.94 5.4c-.14.8.7 1.4 1.3 1L12 18l4.88 2.56c.6.3 1.4-.3 1.3-1l-.94-5.4 3.96-3.86c.62-.6.3-1.5-.5-1.7z"/></svg>
+                            </div>
+                            <div class="text-xl font-bold mb-2">Platinum</div>
+                            <div class="text-2xl font-bold mb-2">$100</div>
+                            <div class="text-sm opacity-75 mt-2">Major Blessing</div>
+                        </div>
+
+                        <div class="pricing-card bg-white border border-sky-500 p-8 rounded-2xl text-gray-900 text-center group hover:scale-105 transition-transform duration-300 shadow-xl">
+                            <div class="w-16 h-16 bg-gradient-to-br from-sky-500 to-sky-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+                            </div>
+                            <div class="text-xl font-bold mb-2">Multi-Platinum</div>
+                            <div class="text-2xl font-bold mb-2">$250</div>
+                            <div class="text-sm opacity-75 mt-2">Ultimate Support</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Airplay Chart Image -->
+                    <div class="mt-12">
+                        <img src="../assets/airplay.png" alt="Detailed Radio Airplay Chart" class="max-w-full mx-auto rounded-lg shadow-xl"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audio Section -->
+    <section id="audio" class="py-16 bg-gradient-to-br from-gray-100 to-gray-200 relative overflow-hidden">
+        <!-- Animated Background Elements -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div class="absolute top-0 left-0 w-96 h-96 bg-red-200/20 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
+            <div class="absolute top-0 right-0 w-96 h-96 bg-sky-200/20 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+            <div class="absolute -bottom-8 left-20 w-96 h-96 bg-amber-200/20 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
+        </div>
+
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-5xl mx-auto">
+                <!-- Section Header -->
+                <div class="mb-12">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 font-playfair">
+                        <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-red-800">Listen to the Gospel</span>
+                    </h2>
+                    <div class="w-32 h-1 bg-gradient-to-r from-red-600 to-red-800 mx-auto rounded-full"></div>
+                </div>
+
+                <!-- New Audio Player Design -->
+                <div class="glass-card rounded-2xl p-8">
+                    <div class="flex flex-col lg:flex-row items-center gap-2">
+                        <!-- Album Art -->
+                        <div class="relative w-64 h-64 flex-shrink-0 group">
+                            <div class="absolute inset-0 bg-gradient-to-br from-red-500/10 to-sky-500/10 rounded-2xl blur-xl opacity-50"></div>
+                            <img src="../assets/englishSite.jpg" alt="The Gospel Album Cover" class="relative w-full h-full object-cover rounded-2xl shadow-lg"/>
+
+                            <!-- Audio Waves Visualizer Overlay on Image -->
+                            <div id="audioWaves" class="absolute inset-x-0 bottom-4 flex justify-center items-end space-x-1 h-12">
+                                <div class="audio-wave bg-red-600"></div>
+                                <div class="audio-wave bg-red-600"></div>
+                                <div class="audio-wave bg-red-600"></div>
+                                <div class="audio-wave bg-red-600"></div>
+                                <div class="audio-wave bg-red-600"></div>
+                                <div class="audio-wave bg-red-600"></div>
+                                <div class="audio-wave bg-red-600"></div>
+                                <div class="audio-wave bg-red-600"></div>
+                                <div class="audio-wave bg-red-600"></div>
+                                <div class="audio-wave bg-red-600"></div>
+                            </div>
+                        </div>
+
+                        <!-- Track Info and Controls -->
+                        <div class="flex-1 text-center space-y-6">
+                            <div>
+                                <h3 class="text-3xl font-bold text-gray-900 mb-2 font-playfair">"The Gospel"</h3>
+                                <p class="text-lg text-gray-600 mb-3">Evangelist Jones</p>
+                                <div class="flex items-center justify-center space-x-3">
+                                  
+                                    
+                                </div>
+                            </div>
+
+                            <!-- Audio Element -->
+                            <audio id="audioPlayer" preload="metadata" class="hidden" role="audio">
+                                <source src="../assets/The Gospel.mp3" type="audio/mpeg">
+                               
+                                Your browser does not support the audio element.
+                            </audio>
+
+                            <!-- Play Button (Middle) -->
+                            <div class="flex justify-center">
+                                <button id="playButton" class="group relative">
+                                    <!-- Outer Ring -->
+                                    <div class="absolute inset-0 bg-gradient-to-r from-red-600 to-red-800 rounded-full blur-md opacity-50 group-hover:opacity-75 transition-opacity"></div>
+                                    
+                                    <!-- Button Container -->
+                                    <div class="relative w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-lg transform group-hover:scale-105 transition-transform duration-300">
+                                        <!-- Inner Circle -->
+                                        <div class="absolute inset-2 bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
+                                        
+                                        <!-- Play/Pause Icons -->
+                                        <svg id="playIcon" class="w-8 h-8 text-white relative z-10" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z"/>
+                                        </svg>
+                                        <svg id="pauseIcon" class="w-8 h-8 text-white relative z-10 hidden" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                                        </svg>
+                                    </div>
+                                </button>
+                            </div>
+
+                            <!-- Progress Bar -->
+                            <div class="space-y-3">
+                                <div class="flex justify-between text-sm text-gray-600 font-medium">
+                                    <span id="currentTime" class="font-mono">0:00</span>
+                                    <span id="duration" class="font-mono">0:00</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2 overflow-hidden">
+                                    <div id="progressBar" class="bg-gradient-to-r from-red-600 to-red-800 h-2 rounded-full transition-all duration-300 relative">
+                                        <div class="absolute inset-0 bg-white/20 animate-pulse"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="flex flex-col md:flex-row justify-center items-stretch gap-8 mt-12">
+            <!-- Gospel Shop Card -->
+    <div class="glass-card rounded-3xl p-6 flex flex-col items-center justify-between text-center max-w-md w-full animate-fadeInUp shadow-xl transition-all duration-300 hover:scale-[1.03] backdrop-blur-lg bg-white/30 border-2 border-red-600 flex-1 h-[250px]">
+      <h3 class="text-lg font-bold text-black mb-3 font-playfair">Uplift Your Soul with Gospel Sounds 🎵</h3>
+      <p class="text-sm text-black mb-4">For soul-stirring and inspirational gospel content.</p>
+      <a href="https://justwanttoencourageyou.org/" target="_blank" rel="noopener noreferrer" class="mt-auto inline-flex items-center px-6 py-2 rounded-full text-sm font-semibold text-white bg-red-600 hover:bg-red-700 transition-all duration-300 shadow-md hover:shadow-lg group">
+        <span>Visit Gospel Store</span>
+        <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Right Div: Listen on Jango -->
+    <div class="glass-card rounded-3xl p-6 flex flex-col items-center justify-between text-center max-w-md w-full animate-fadeInUp animation-delay-300 shadow-xl transition-all duration-300 hover:scale-[1.03] backdrop-blur-lg bg-white/30 border-2 border-red-600 flex-1 h-[250px]">
+      <h3 class="text-lg font-bold text-black mb-3 font-playfair">Listen on Jango Play</h3>
+      <p class="text-sm text-black mb-4">Visit Jango.com to hear the full selection.</p>
+      <a href="https://www.jango.com/music/Pure+Gold+Gospel+Singers" target="_blank" rel="noopener noreferrer" class="mt-auto inline-flex items-center px-6 py-2 rounded-full text-sm font-semibold text-white bg-red-600 hover:bg-red-700 transition-all duration-300 shadow-md hover:shadow-lg group">
+        <span>Visit Jango.com</span>
+        <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 003-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Left Div: Playing Gospel Music & Amazon Download -->
+    <div class="glass-card rounded-3xl p-6 flex flex-col items-center justify-between text-center max-w-md w-full animate-fadeInUp animation-delay-600 shadow-xl transition-all duration-300 hover:scale-[1.03] backdrop-blur-lg bg-white/30 border-2 border-red-600 flex-1 h-[250px]">
+      <h3 class="text-lg font-bold text-black mb-3 font-playfair">This Gospel Message is Playing</h3>
+      <p class="text-sm text-black mb-4">Your donation spreads the Gospel on radio.</p>
+      <a href="#" class="mt-auto inline-flex items-center px-6 py-2 rounded-full text-sm font-semibold text-white bg-red-600 hover:bg-red-700 transition-all duration-300 shadow-md hover:shadow-lg group">
+        <span>Coming Soon</span>
+        <svg class="w-5 h-5 ml-3 transform group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+        </svg>
+      </a>
+    </div>
+        </div>
+        
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonies Section -->
+    <section id="testimonios" class="py-16">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-5xl mx-auto mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-playfair">Listener Testimonials</h2>
+                <div class="w-32 h-1 bg-gradient-to-r from-amber-400 to-amber-600 mx-auto rounded-full mb-6"></div>
+                <p class="text-xl text-gray-600">Spreading "The Gospel" Worldwide</p>
+            </div>
+
+            <!-- Testimonies Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-12" id="testimoniesGrid">
+                <!-- Testimonies will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet the Ministers Section -->
+    <section id="ministers" class="py-16 bg-gradient-to-br from-red-50 to-slate-50 relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div class="absolute top-0 left-0 w-96 h-96 bg-red-200/20 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
+            <div class="absolute top-0 right-0 w-96 h-96 bg-rose-200/20 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+            <div class="absolute -bottom-8 left-20 w-96 h-96 bg-red-100/20 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
+        </div>
+
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-6xl mx-auto mb-12">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 font-playfair">
+                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-red-800">🌐 Our Gospel Voices 🎤</span>
+                </h2>
+                <div class="w-32 h-1 bg-gradient-to-r from-red-500 to-red-700 mx-auto rounded-full mb-6"></div>
+                <p class="text-xl text-gray-600">Voices carrying the message of hope in different languages</p>
+            </div>
+
+            <!-- Ministers Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Minister 1 -->
+                <div class="glass-card rounded-2xl p-6 text-center transform hover:scale-105 transition-all duration-300 shadow-xl backdrop-blur-lg">
+                    <div class="relative w-48 h-48 mx-auto mb-4">
+                        <div class="absolute inset-0 bg-gradient-to-br from-red-500/20 to-red-600/20 rounded-2xl blur-xl"></div>
+                        <img src="../assets/Bridie.jpg" alt="Birdie M Jones" class="relative w-full h-full object-cover rounded-2xl shadow-lg">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Birdie M Jones</h3>
+                    <p class="text-md text-red-600 mb-2">Voice of "The Gospel V1" (English)</p>
+                    <p class="text-sm text-gray-600">Evangelist of God Will Provide Outreach Ministry. Author of "The Gospel" CD.</p>
+                </div>
+
+                <!-- Minister 2 -->
+                <div class="glass-card rounded-2xl p-6 text-center transform hover:scale-105 transition-all duration-300 shadow-xl backdrop-blur-lg">
+                    <div class="relative w-48 h-48 mx-auto mb-4">
+                        <div class="absolute inset-0 bg-gradient-to-br from-red-600/20 to-red-700/20 rounded-2xl blur-xl"></div>
+                        <img src="../assets/Astha.jpg" alt="Aastha Joshi" class="relative w-full h-full object-cover rounded-2xl shadow-lg">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Aastha Joshi</h3>
+                   <p class="text-lg text-red-600 mb-3">Narrating "The Gospel V6" (Hindi)</p>
+                        <p class="text-gray-600">Professional musician and vocal trainer in Ghaziabad, Uttar Pradesh, India. Dedicated to music ministry and vocal training.</p>
+                     
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+        <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-6xl mx-auto">
+                <!-- Mission Statement & Contact Info -->
+                <div class="mb-8 text-center">
+                    <h3 class="text-xl font-bold text-white mb-4 font-playfair">Gospel for the World</h3>
+                    <p class="text-gray-400 text-sm mb-6 max-w-3xl mx-auto">
+                        Our message reaches international audiences through Jango.com, strategically placing God's word alongside secular music streams since 2016.
+                    </p>
+                    <p class="text-amber-400 text-sm italic mb-8">
+                        "The fruit of the righteous is a tree of life, and he who wins souls is wise." - Proverbs 11:30
+                    </p>
+                </div>
+
+                <!-- Contact Information -->
+                <div id="contact" class="flex flex-wrap justify-center gap-x-12 gap-y-4 mb-8 text-sm scroll-mt-20">
+                    <div class="flex items-center space-x-2">
+                        <span class="text-amber-400">📧</span>
+                        <a href="mailto:Thegospelsavesus100@gmail.com" class="text-gray-300 hover:text-white transition-colors">Thegospelsavesus100@gmail.com</a>
+                    </div>
+
+                    <div class="flex items-center space-x-2">
+                        <span class="text-amber-400">📞</span>
+                        <a href="tel:404-709-9620" class="text-gray-300 hover:text-white transition-colors">404-709-9620</a>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <span class="text-amber-400">📬</span>
+                        <span class="text-gray-300">God Will Provide, P.O. Box 213, 75 Washington Street, Fairburn, GA 30213</span>
+                    </div>
+                </div>
+
+                <!-- Copyright -->
+                <div class="border-t border-gray-800 pt-4 text-center">
+                    <p class="text-gray-400 text-xs">Copyright ©2025 The Gospel Saves Us</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

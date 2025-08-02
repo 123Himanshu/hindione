@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - The Gospel Saves Us</title>
+    <meta name="description" content="Learn more about our ministry and mission to spread the Gospel of Jesus Christ worldwide.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="../favicon.ico">
+</head>
+<body class="font-inter bg-gradient-to-br from-slate-50 to-blue-50">
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="fixed inset-0 bg-white/80 backdrop-blur-sm flex items-center justify-center z-[9999] hidden opacity-0 transition-opacity duration-300">
+        <div class="loader ease-linear rounded-full border-4 border-t-4 border-gray-200 h-12 w-12"></div>
+    </div>
+
+    <!-- Header -->
+    <header id="header" class="fixed top-0 w-full z-50 transition-all duration-300 bg-gray-200/90 backdrop-blur-lg border-b border-white/20 shadow-md animate-fadeIn">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex h-16 items-center justify-between">
+                <!-- Left Logo Section -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <div class="logo-container">
+                        <img src="../assets/logo.jpg" alt="Logo" class="w-12 h-12 object-contain" />
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="flex items-center space-x-4 md:space-x-8">
+                    <a href="index.html" class="nav-link text-gray-600 hover:text-red text-sm md:text-base lg:text-xl font-medium transition-colors">Home</a>
+                    <a href="donate.html" class="nav-link text-gray-600 hover:text-red text-sm md:text-base lg:text-xl font-medium transition-colors">Donate</a>
+                    <a href="about.html" class="nav-link text-gray-600 hover:text-red text-sm md:text-base lg:text-xl font-medium transition-colors">About Us</a>
+                    <a href="#contact" class="nav-link text-gray-600 hover:text-red text-sm md:text-base lg:text-xl font-medium transition-colors">Contact</a>
+                    
+                    <!-- Language Switcher -->
+                    <div class="language-switcher">
+                        <button id="languageButton" class="language-button">
+                            <span>English</span>
+                            <svg class="chevron-icon w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div id="languageDropdown" class="language-dropdown">
+                            <a href="/english/index.html" class="language-option active">
+                                <span>English</span>
+                            </a>
+                            <a href="../index.html" class="language-option">
+                                <span>हिंदी</span>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- Right Logo Section -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <div class="logo-container">
+                        <img src="../assets/logo.jpg" alt="Logo" class="w-12 h-12 object-contain" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Page Content -->
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section 
+            class="about-hero-image py-16 bg-cover bg-center bg-no-repeat relative"
+            style="background-image: url('../assets/about.jpeg');"
+        >
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center max-w-4xl mx-auto">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4 font-playfair drop-shadow-lg">
+                        <span class="text-black">Know</span> <span class="text-red-600">Our Ministry</span>
+                    </h1>
+                    <div class="w-32 h-1 bg-gradient-to-r from-amber-400 to-amber-600 mx-auto rounded-full mb-6"></div>
+                    <p class="text-lg md:text-xl text-black leading-relaxed drop-shadow">
+                        Spreading the Gospel of Jesus Christ worldwide.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ministry Services -->
+        <section id="ministers" class="py-16 bg-gradient-to-br from-red-50 to-slate-50 relative overflow-hidden">
+    <!-- Background Elements -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <div class="absolute top-0 left-0 w-96 h-96 bg-red-200/20 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
+        <div class="absolute top-0 right-0 w-96 h-96 bg-rose-200/20 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+        <div class="absolute -bottom-8 left-20 w-96 h-96 bg-red-100/20 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
+    </div>
+
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center max-w-6xl mx-auto mb-12">
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 font-playfair">
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-red-800">🌐 Meet Our Ministers 🎤</span>
+            </h2>
+            <div class="w-32 h-1 bg-gradient-to-r from-red-500 to-red-700 mx-auto rounded-full mb-6"></div>
+            <p class="text-xl text-gray-600">Dedicated to sharing the Gospel in various languages</p>
+        </div>
+
+        <!-- Ministers Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Minister 1 -->
+            <div class="glass-card rounded-2xl p-8 text-center transform hover:scale-105 transition-all duration-300 shadow-xl backdrop-blur-lg">
+                <div class="relative w-64 h-64 mx-auto mb-6">
+                    <div class="absolute inset-0 bg-gradient-to-br from-red-500/20 to-red-600/20 rounded-2xl blur-xl"></div>
+                    <img src="../assets/Bridie.jpg" alt="BIRDIE M JONES" class="relative w-full h-full object-cover rounded-2xl shadow-lg">
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">BIRDIE M JONES</h3>
+                <p class="text-lg text-red-600 mb-3">Narrating "The Gospel V1" (English)</p>
+                <p class="text-gray-600">Evangelist for the Outreach Ministry, God Will Provide (Atlanta, Georgia). Author of CD "The Gospel" (Spoken Word) heard worldwide via Pure Gold Gospel Singers.</p>
+            </div>
+
+            <!-- Minister 2 -->
+            <div class="glass-card rounded-2xl p-8 text-center transform hover:scale-105 transition-all duration-300 shadow-xl backdrop-blur-lg">
+                <div class="relative w-64 h-64 mx-auto mb-6">
+                    <div class="absolute inset-0 bg-gradient-to-br from-red-600/20 to-red-700/20 rounded-2xl blur-xl"></div>
+                    <img src="../assets/Sol.jpg" alt="SOL PERERYA" class="relative w-full h-full object-cover rounded-2xl shadow-lg">
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">SOL PERERYA</h3>
+                <p class="text-lg text-red-600 mb-3">Narrating "The Gospel V2" (Spanish)</p>
+                <p class="text-gray-600">Musician and registered nurse in Argentina. Dedicated to spreading the gospel through music and healthcare ministry.</p>
+            </div>
+
+            <!-- Minister 3 -->
+            <div class="glass-card rounded-2xl p-8 text-center transform hover:scale-105 transition-all duration-300 shadow-xl backdrop-blur-lg">
+                <div class="relative w-64 h-64 mx-auto mb-6">
+                    <div class="absolute inset-0 bg-gradient-to-br from-red-400/20 to-red-500/20 rounded-2xl blur-xl"></div>
+                    <img src="../assets/JANET.jpg" alt="JANET OLUFUNKE OLAITAN" class="relative w-full h-full object-cover rounded-2xl shadow-lg">
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">JANET OLUFUNKE OLAITAN</h3>
+                <p class="text-lg text-red-600 mb-3">Narrating "The Gospel V3" (Yoruba)</p>
+                <p class="text-gray-600">Evangelist, retired professional teacher, and singer/songwriter. From Osun State, Nigeria. Passionate about education and worship ministry.</p>
+            </div>
+
+            <!-- Minister 4 -->
+            <div class="glass-card rounded-2xl p-8 text-center transform hover:scale-105 transition-all duration-300 shadow-xl backdrop-blur-lg">
+                <div class="relative w-64 h-64 mx-auto mb-6">
+                    <div class="absolute inset-0 bg-gradient-to-br from-red-500/20 to-red-600/20 rounded-2xl blur-xl"></div>
+                    <img src="../assets/SUSSAN.jpg" alt="SUSSAN CHINYERE COLLINS" class="relative w-full h-full object-cover rounded-2xl shadow-lg">
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">SUSSAN CHINYERE COLLINS</h3>
+                <p class="text-lg text-red-600 mb-3">Narrating "The Gospel V4" (Igbo)</p>
+                <p class="text-gray-600">Professional teacher from Ideato South in Imo State, Nigeria. Dedicated educator passionate about spreading God's word through teaching.</p>
+            </div>
+
+            <!-- Minister 5 -->
+            <div class="glass-card rounded-2xl p-8 text-center transform hover:scale-105 transition-all duration-300 shadow-xl backdrop-blur-lg">
+                <div class="relative w-64 h-64 mx-auto mb-6">
+                    <div class="absolute inset-0 bg-gradient-to-br from-red-600/20 to-red-700/20 rounded-2xl blur-xl"></div>
+                    <img src="../assets/ISAAC.jpg" alt="ISAAC OLAMIDE SAMSON" class="relative w-full h-full object-cover rounded-2xl shadow-lg">
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">ISAAC OLAMIDE SAMSON</h3>
+                <p class="text-lg text-red-600 mb-3">Narrating "The Gospel V5" (Hausa)</p>
+                <p class="text-gray-600">Clergyman and full-time minister in Celestial Church of Christ. From Ogun State, Nigeria; speaks Hausa fluently. Devoted to ministry work.</p>
+            </div>
+
+            <!-- Minister 6 -->
+            <div class="glass-card rounded-2xl p-8 text-center transform hover:scale-105 transition-all duration-300 shadow-xl backdrop-blur-lg">
+                <div class="relative w-64 h-64 mx-auto mb-6">
+                    <div class="absolute inset-0 bg-gradient-to-br from-red-500/20 to-red-600/20 rounded-2xl blur-xl"></div>
+                    <img src="../assets/Astha.jpg" alt="AASTHA JOSHI" class="relative w-full h-full object-cover rounded-2xl shadow-lg">
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">AASTHA JOSHI</h3>
+                <p class="text-lg text-red-600 mb-3">Narrating "The Gospel V6" (Hindi)</p>
+                <p class="text-gray-600">Professional musician and vocal coach in Ghaziabad, Uttar Pradesh, India. Passionate about music ministry and vocal training.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-6xl mx-auto">
+                <!-- Mission Statement & Contact Info -->
+                <div class="mb-8 text-center">
+                    <h3 class="text-xl font-bold text-white mb-4 font-playfair">Gospel for the World</h3>
+                    <p class="text-gray-400 text-sm mb-6 max-w-3xl mx-auto">
+                        Our message reaches international audiences through Jango.com, strategically placing God's word alongside secular music streams since 2016.
+                    </p>
+                    <p class="text-amber-400 text-sm italic mb-8">
+                        "The fruit of the righteous is a tree of life, and he who wins souls is wise." - Proverbs 11:30
+                    </p>
+                </div>
+
+                <!-- Contact Information -->
+                <div id="contact" class="flex flex-wrap justify-center gap-x-12 gap-y-4 mb-8 text-sm scroll-mt-20">
+                    <div class="flex items-center space-x-2">
+                        <span class="text-amber-400">📧</span>
+                        <a href="mailto:Thegospelsavesus100@gmail.com" class="text-gray-300 hover:text-white transition-colors">Thegospelsavesus100@gmail.com</a>
+                    </div>
+
+                    <div class="flex items-center space-x-2">
+                        <span class="text-amber-400">📞</span>
+                        <a href="tel:404-709-9620" class="text-gray-300 hover:text-white transition-colors">404-709-9620</a>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <span class="text-amber-400">📬</span>
+                        <span class="text-gray-300">God Will Provide, P.O. Box 213, 75 Washington Street, Fairburn, GA 30213</span>
+                    </div>
+                </div>
+
+                <!-- Copyright -->
+                <div class="border-t border-gray-800 pt-4 text-center">
+                    <p class="text-gray-400 text-xs">Copyright ©2025 The Gospel Saves Us</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>
